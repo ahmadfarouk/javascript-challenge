@@ -64,7 +64,7 @@ function updateFilter() {
 button.on("click", function() {
     table_body.html("");
     enter_date_input = d3.select("input")
-
+    console.log (selector)
     filter_value = enter_date_input.property("value");
     var filteredData = tableData.filter(data_datetime => data_datetime.datetime == filter_value);
     //console.log (filteredData);
