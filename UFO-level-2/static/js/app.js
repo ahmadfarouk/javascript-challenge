@@ -30,8 +30,8 @@ function updateFilter() {
     var fitlerTitle = d3.selectAll("#ufo-filter")
 
      if (dropdownMenuValue == "Date") {
-        enter_date_input.property("value","1/1/2011")
-        fitlerTitle.text("Enter a Date")
+        enter_date_input.property("value","1/1/2010")
+        fitlerTitle.text("Enter Date")
         console.log(dropdownMenuValue)
         selector = "Date"
      }
@@ -66,6 +66,38 @@ button.on("click", function() {
     enter_date_input = d3.select("input")
     console.log (selector)
     filter_value = enter_date_input.property("value");
+
+    if (selector == "Date") {
+        enter_date_input.property("value","1/1/2010")
+        fitlerTitle.text("Enter Date")
+        console.log(dropdownMenuValue)
+        selector = "Date"
+     }
+     else if (selector == "City") {
+        enter_date_input.property("value","benton")
+        fitlerTitle.text("Enter City Name")
+        console.log(dropdownMenuValue)
+        selector = "City"
+     }
+     else if (selector == "State") {
+        enter_date_input.property("value","ar")
+        fitlerTitle.text("Enter State Name")
+        console.log(dropdownMenuValue)
+        selector = "State"
+     }
+     else if (selector == "Country") {
+        enter_date_input.property("value","us")
+        fitlerTitle.text("Enter Country Name")
+        console.log(dropdownMenuValue)
+        selector = "Country"
+    }
+    else if (selector == "Shape") {
+        enter_date_input.property("value","light")
+        fitlerTitle.text("Enter a Shape")
+        console.log(dropdownMenuValue)
+        selector = "Shape"
+    }
+
     var filteredData = tableData.filter(data_datetime => data_datetime.datetime == filter_value);
     //console.log (filteredData);
 
