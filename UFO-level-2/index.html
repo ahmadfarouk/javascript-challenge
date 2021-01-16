@@ -36,7 +36,14 @@
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
+                        <select id="selFilterOption">
+                          <option value="Date">Date</option>
+                          <option value="City">City</option>
+                          <option value="State">State</option>
+                          <option value="Country">Country</option>
+                          <option value="Shape">Shape</option>
+                        </select>
+                        <label for="date" id="ufo-filter">Enter a Date</label>
                         <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
                       </li>
                     </ul>
