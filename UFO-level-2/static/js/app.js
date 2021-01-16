@@ -1,5 +1,6 @@
 // from data.js
 var tableData = data;
+var selector = "Date"
 
 // YOUR CODE HERE!
 //console.log (tableData)
@@ -32,26 +33,31 @@ function updateFilter() {
         enter_date_input.property("value","1/1/2011")
         fitlerTitle.text("Enter a Date")
         console.log(dropdownMenuValue)
+        selector = "Date"
      }
      else if (dropdownMenuValue == "City") {
         enter_date_input.property("value","benton")
         fitlerTitle.text("Enter City Name")
         console.log(dropdownMenuValue)
+        selector = "City"
      }
      else if (dropdownMenuValue == "State") {
         enter_date_input.property("value","ar")
         fitlerTitle.text("Enter State Name")
         console.log(dropdownMenuValue)
+        selector = "State"
      }
      else if (dropdownMenuValue == "Country") {
         enter_date_input.property("value","us")
         fitlerTitle.text("Enter Country Name")
         console.log(dropdownMenuValue)
+        selector = "Country"
     }
     else if (dropdownMenuValue == "Shape") {
         enter_date_input.property("value","light")
         fitlerTitle.text("Enter a Shape")
         console.log(dropdownMenuValue)
+        selector = "Shape"
     }
 };
 
