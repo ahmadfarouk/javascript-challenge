@@ -32,15 +32,11 @@ button.on("click", function() {
     enter_shape_input = d3.select("#shapesSelection")
 
     filter_date_value = enter_date_input.property("value");
-    console.log(filter_date_value)
     filter_city_value = enter_city_input.property("value");
-    console.log(filter_city_value)
     filter_state_value = enter_state_input.property("value");
-    console.log(filter_state_value)
     filter_country_value = enter_country_input.property("value");
-    console.log(filter_country_value)
     filter_shape_value = enter_shape_input.property("value");
-    console.log(filter_shape_value)
+
     var filteredData = tableData
     if (filter_date_value) {filteredData = tableData.filter(data_datetime => data_datetime.datetime == filter_date_value); }
     if (filter_city_value) {filteredData = filteredData.filter(data_city => data_city.city == filter_city_value); }
