@@ -25,7 +25,7 @@ var button = d3.select("#filter-btn");
 button.on("click", function() {
 
     table_body.html("");
-    enter_date_input = d3.select("#ufo-datetime-input")
+    enter_date_input = d3.select("#datetimeSelection")
     enter_city_input = d3.select("#citiesSelection")
     enter_state_input = d3.select("#statesSelection")
     enter_country_input = d3.select("#countriesSelection")

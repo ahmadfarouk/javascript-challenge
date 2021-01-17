@@ -16,12 +16,21 @@ console.log (cities_unique);
 console.log (states_unique);
 console.log (shapes_unique);
 
+datetime_select = d3.select ("#datetimeSelection");
 countries_select = d3.select ("#countriesSelection");
 states_select = d3.select ("#statesSelection");
 cities_select = d3.select ("#citiesSelection");
 
 function fillSelects ()
 {
+  datetime_select.append("option");
+  for (i=0;i < dates_unique.length; i++)
+    {
+      
+      var new_option = datetime_select.append("option");
+      new_option.text(dates_unique[i]);
+    }
+
   cities_select.append("option");
   for (i=0;i < cities_unique.length; i++)
     {
