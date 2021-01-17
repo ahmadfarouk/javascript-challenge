@@ -6,7 +6,7 @@ var selector = "Date"
 //console.log (tableData)
 
 var table_body = d3.select("tbody");
-console.log (table_body)
+//console.log (table_body)
 
 tableData.forEach(function(xyz){
     //console.log (xyz);
