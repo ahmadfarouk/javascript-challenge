@@ -19,10 +19,11 @@ tableData.forEach(function(xyz){
     })
 })
 
+var mainForm = d3.select("#main-form");
+mainForm.on("change", formChange)
 
-var button = d3.select("#filter-btn");
-
-button.on("click", function() {
+function formChange () {
+    d3.event.preventDefault ();
 
     table_body.html("");
     enter_date_input = d3.select("#datetimeSelection")
@@ -55,4 +56,4 @@ button.on("click", function() {
             new_td.text(value);
         })
     })
-})
+}
