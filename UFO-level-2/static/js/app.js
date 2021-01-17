@@ -28,7 +28,7 @@ button.on("click", function() {
     enter_date_input = d3.select("#ufo-datetime-input")
     enter_city_input = d3.select("#ufo-city-input")
     enter_state_input = d3.select("#ufo-state-input")
-    enter_country_input = d3.select("#ufo-country-input")
+    enter_country_input = d3.select("#countriesSelection")
     enter_shape_input = d3.select("#ufo-shape-input")
 
     filter_date_value = enter_date_input.property("value");
