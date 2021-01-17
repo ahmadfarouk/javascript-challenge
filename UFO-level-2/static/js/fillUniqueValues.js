@@ -10,19 +10,22 @@ var cities_unique = cities.filter(function(item, pos){ return cities.indexOf(ite
 var states_unique = states.filter(function(item, pos){ return states.indexOf(item)== pos; });
 var shapes_unique = shapes.filter(function(item, pos){ return shapes.indexOf(item)== pos; });
 
-console.log (dates_unique);
-console.log (countries_unique);
-console.log (cities_unique);
-console.log (states_unique);
-console.log (shapes_unique);
-
 datetime_select = d3.select ("#datetimeSelection");
 countries_select = d3.select ("#countriesSelection");
 states_select = d3.select ("#statesSelection");
 cities_select = d3.select ("#citiesSelection");
+shapes_select = d3.select ("#shapesSelection");
 
 function fillSelects ()
 {
+  shapes_select.append("option");
+  for (i=0;i < shapes_unique.length; i++)
+    {
+      
+      var new_option = shapes_select.append("option");
+      new_option.text(shapes_unique[i]);
+    }
+
   datetime_select.append("option");
   for (i=0;i < dates_unique.length; i++)
     {

@@ -29,7 +29,7 @@ button.on("click", function() {
     enter_city_input = d3.select("#citiesSelection")
     enter_state_input = d3.select("#statesSelection")
     enter_country_input = d3.select("#countriesSelection")
-    enter_shape_input = d3.select("#ufo-shape-input")
+    enter_shape_input = d3.select("#shapesSelection")
 
     filter_date_value = enter_date_input.property("value");
     console.log(filter_date_value)
